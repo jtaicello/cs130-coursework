@@ -9,8 +9,8 @@ const showPhoto = (e) => {
     console.log('the active element is:', activeCard);
     document.querySelector('.preview').className = "preview active";
     document.querySelector('.featured_image').style.backgroundImage = activeCard.style.backgroundImage;
-    document.querySelector('body').style.overflow = 'hidden';
-    document.querySelector('body').window.scrollTop = 0;
+    // document.querySelector('body').style.overflow = 'hidden';
+    // document.querySelector('body').window.scrollTop = 0;
 }
 // PART 2: Replace this code with what's commented below.
 //         Instead of just applying the event handler to
