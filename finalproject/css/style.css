@@ -1,0 +1,140 @@
+/*
+COLOR PALETTE
+https://coolors.co/283d3b-197278-edddd4-c44536-772e25
+#283D3B - Outer space crayola
+#197278 - Skobeloff
+#EDDDD4 - Champagne pink
+#c44536 - Golden Gate Bridge
+#772e25 - Liver
+*/
+html {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+     "sidebar main"
+}
+aside {
+  grid-area: sidebar;
+  background-color: #787877;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+main {
+  grid-area: main;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  /* line-height: 0; */
+}
+h2 {
+  font-size: 45px;
+}
+h1, h2 {
+  font-weight: 550;
+}
+
+/* Profile
+------------------------------------*/
+header {
+  background-color: #197278;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  /* border: black;
+  border-style: solid; */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutme {
+  padding: 20px;
+  display: grid;
+  text-align: justify;
+  grid-template-columns: 46% 4% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+     "bio blank headshot"
+}
+.aboutme img {
+  grid-area: headshot;
+  margin-top: 145px;
+}
+
+/* Projects
+------------------------------------*/
+.myvideos {
+  background: #EDDDD4;
+  padding: 20px;
+}
+.myvideos p {
+  width: 560px;
+  text-align: justify;
+}
+.myvideos a {
+  color: #2F3061;
+}
+.myvideos {
+  overflow: hidden;
+}
+
+
+/* Work Experience
+------------------------------------*/
+.socialmedia {
+  /* background-color: white; */
+  /* color: #EDDDD4; */
+  padding: 20px;
+}
+.socialmedia h2 {
+  text-align: left;
+}
+.socialmedia h3 {
+}
+.socialmedia {
+  text-align: justify;
+}
+
+
+/* Contact Info
+------------------------------------*/
+footer {
+  padding: 20px;
+  background: #283D3B;
+  color: white;
+  text-align: center;
+  line-height: normal;
+}
+/* footer, a:link {
+  color: white;
+} */
+
+
+/* Responsive
+------------------------------------*/
+@media screen and (max-width:750px){
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+       "main"
+  }
+  aside {
+    visibility: hidden;
+  }
+}
+
+
+
+/* @media screen and (max-width:750px){
+
+} */

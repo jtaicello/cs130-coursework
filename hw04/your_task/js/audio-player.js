@@ -27,7 +27,7 @@ const AudioPlayer = (selector, audioFile) => {
         jumpToTime();
         audio.play();
         playButton.classList.add('fa-pause-circle');
-        
+
     };
 
     this.pause = () => {
@@ -46,7 +46,7 @@ const AudioPlayer = (selector, audioFile) => {
             console.log('returning...');
             return;
         }
-        
+
         progressController.value = getSliderPosition();
         timeElapsed.innerHTML = getCurrentTime();
         timeTotal.innerHTML = getDuration();
@@ -140,4 +140,3 @@ const AudioPlayer = (selector, audioFile) => {
     }
     return this;
 };
-
